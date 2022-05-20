@@ -7,6 +7,9 @@ import (
 )
 
 func main() {
+	//get command parameter
 	input := os.Args[len(os.Args)-1]
-	fmt.Println(c.ExecuteCompressionLossLess(input))
+
+	result := c.ExecuteCompressionLossLess(input)
+	fmt.Println(result)
 }
